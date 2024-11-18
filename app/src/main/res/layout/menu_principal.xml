@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".PantallaM">
+
+    <!-- Título en la parte superior -->
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="@string/f1_training"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="#004146"
+        android:fontFamily="@font/fuentef1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Botón Jugar -->
+    <Button
+        android:id="@+id/botoJugar"
+        android:layout_width="380dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#03BFB5"
+        android:text="@string/jugar"
+        android:fontFamily="@font/fuentef2"
+        android:textSize="24sp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/botonera_toolbar" />
+
+    <!-- Contenedor para los botones y la toolbar en la parte inferior -->
+    <LinearLayout
+        android:id="@+id/botonera_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Botón Ajustes -->
+        <Button
+            android:id="@+id/botoConf"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#03BFB5"
+            android:text="Board"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/fuentef2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Botón Ayuda -->
+        <Button
+            android:id="@+id/botoAyuda"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:backgroundTint="#03BFB5"
+            android:text="Ayuda"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/fuentef2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!-- Botón Salir -->
+        <Button
+            android:id="@+id/botoSalir"
+            android:layout_width="0dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:backgroundTint="#018076"
+            android:text="Salir"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/fuentef2"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

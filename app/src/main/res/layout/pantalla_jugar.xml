@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#949398"
+    tools:context=".PantallaJ">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/botonPausa"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_ripple"
+            android:contentDescription="@string/boton_de_pausa"
+            android:elevation="8dp"
+            android:padding="0dp"
+            app:cornerRadius="12dp" />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/icono_de_pausa"
+            android:src="@drawable/pause_icon" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

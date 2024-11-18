@@ -1,0 +1,29 @@
+<!-- res/layout/dialog_puntuacion.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EFF5F9">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Guarda tu puntuación"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#004146"/>
+
+    <EditText
+        android:id="@+id/editTextPuntuacion"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="text"
+        android:hint="Escribe tu nombre aquí"
+        android:maxLength="50"
+        android:layout_marginBottom="25dp"
+        android:textColor="#B0B0B0"
+        android:background="#EFF5F9"
+        android:padding="8dp"/>
+
+</LinearLayout>

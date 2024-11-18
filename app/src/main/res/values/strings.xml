@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">F1TrainingApp</string>
+    <string name="f1_training">F1 TRAINING</string>
+    <string name="jugar">JUGAR</string>
+    <string name="icono_de_pausa">Ícono de Pausa</string>
+    <string name="boton_de_pausa">Botón de Pausa</string>
+    <string name="boton_de_volver">Botón de Volver</string>
+
+    <string name="ajustos">Ajustes</string>
+    <string name="cercar">Buscar</string>
+    <string name="about">Acerca De</string>
+
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+</resources>

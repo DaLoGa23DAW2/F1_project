@@ -1,0 +1,8 @@
+<resources>
+    <!-- Tema personalizado para el AlertDialog -->
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">#FF4081</item>
+        <item name="android:textColorPrimary">#333333</item>
+        <item name="android:background">#FFFFFF</item>
+    </style>
+</resources>
