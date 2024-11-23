@@ -7,8 +7,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#949398"
-    tools:context=".PantallaJ">
+    tools:context=".PantallaJD2">
 
+    <!-- FrameLayout con el botón de pausa -->
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="48dp"
@@ -32,7 +33,23 @@
             android:layout_gravity="center"
             android:contentDescription="@string/icono_de_pausa"
             android:src="@drawable/pause_icon" />
-
     </FrameLayout>
+
+    <!-- TextView centrado para mostrar el JSON -->
+    <TextView
+        android:id="@+id/textViewDatos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Esperando datos..."
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
